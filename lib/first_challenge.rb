@@ -1,3 +1,5 @@
+require "pry"
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,9 +16,12 @@ def first_challenge
   }
 
   #your code here
-
-
+  contacts["Jon Snow"][:favorite_icecream_flavors] << "mint chip"
+  flavour = contacts["Jon Snow"][:favorite_icecream_flavors]
+  puts flavour
   #remember to return your newly altered contacts hash!
   contacts
 end
+first_challenge
+
 
